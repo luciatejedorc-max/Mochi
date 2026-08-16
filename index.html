@@ -2,8 +2,14 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Mochi · Rastreador de hábitos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+<title>Mochi</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mochi">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#FFF6F0">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -419,18 +425,43 @@
   }
 
   /* ===================== PERSISTENCE ===================== */
+  // This app is meant to be downloaded and opened as its own page (e.g. hosted
+  // and added to the iPhone home screen), so it saves with the browser's own
+  // localStorage. If it happens to be previewed inside Claude's artifact panel,
+  // it will use Claude's window.storage instead, so both contexts work.
+  var hasClaudeStorage = (typeof window.storage !== "undefined") && window.storage && typeof window.storage.get === "function";
+
   var saveTimer = null;
+  function buildPayload(){
+    return JSON.stringify({
+      habits: state.habits,
+      completions: state.completions,
+      notifiedToday: state.notifiedToday,
+      notifEnabled: state.notifEnabled
+    });
+  }
   function persist(){
+    // localStorage is synchronous and near-instant, so save right away —
+    // no debounce — otherwise closing the app quickly after a change (very
+    // common on iOS, where the app can be killed the moment you leave it)
+    // can happen before a delayed save ever runs, losing the change.
+    if(!hasClaudeStorage){
+      try{ localStorage.setItem(STORAGE_KEY, buildPayload()); }
+      catch(e){ console.error("localStorage error", e); }
+      return;
+    }
+    // Claude's window.storage is async and rate-limited, so debounce that path only.
     clearTimeout(saveTimer);
     saveTimer = setTimeout(function(){
-      try{
-        window.storage.set(STORAGE_KEY, JSON.stringify({
-          habits: state.habits,
-          completions: state.completions,
-          notifiedToday: state.notifiedToday,
-          notifEnabled: state.notifEnabled
-        }), false).catch(function(e){ console.error("Storage error", e); });
-      }catch(e){ console.error("Storage error", e); }
+      var payload = buildPayload();
+      if(hasClaudeStorage){
+        try{
+          window.storage.set(STORAGE_KEY, payload, false).catch(function(e){ console.error("Storage error", e); });
+        }catch(e){ console.error("Storage error", e); }
+      } else {
+        try{ localStorage.setItem(STORAGE_KEY, payload); }
+        catch(e){ console.error("localStorage error", e); }
+      }
     }, 250);
   }
 
@@ -444,32 +475,40 @@
     persist();
   }
 
-  function loadData(){
+  function applyParsed(raw){
     try{
-      window.storage.get(STORAGE_KEY, false).then(function(res){
-        if(res && res.value){
-          try{
-            var parsed = JSON.parse(res.value);
-            state.habits = parsed.habits || [];
-            state.completions = parsed.completions || {};
-            state.notifiedToday = parsed.notifiedToday || {};
-            state.notifEnabled = !!parsed.notifEnabled;
-          }catch(e){ seedIfEmpty(); }
-        } else {
+      var parsed = JSON.parse(raw);
+      state.habits = parsed.habits || [];
+      state.completions = parsed.completions || {};
+      state.notifiedToday = parsed.notifiedToday || {};
+      state.notifEnabled = !!parsed.notifEnabled;
+      return true;
+    }catch(e){ return false; }
+  }
+
+  function loadData(){
+    if(hasClaudeStorage){
+      try{
+        window.storage.get(STORAGE_KEY, false).then(function(res){
+          if(!res || !res.value || !applyParsed(res.value)) seedIfEmpty();
+          state.loaded = true;
+          render();
+        }).catch(function(){
           seedIfEmpty();
-        }
-        state.loaded = true;
-        render();
-      }).catch(function(){
-        seedIfEmpty();
-        state.loaded = true;
-        render();
-      });
+          state.loaded = true;
+          render();
+        });
+        return;
+      }catch(e){ /* fall through to localStorage */ }
+    }
+    try{
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if(!raw || !applyParsed(raw)) seedIfEmpty();
     }catch(e){
       seedIfEmpty();
-      state.loaded = true;
-      render();
     }
+    state.loaded = true;
+    render();
   }
 
   /* ===================== TOAST ===================== */
@@ -893,6 +932,20 @@
     persist();
   }
   setInterval(checkReminders, 30000);
+
+  /* ===================== SAFETY-NET FLUSH ===================== */
+  // If the app is closed or backgrounded right after a change, make sure
+  // nothing pending is lost (mainly relevant to the debounced window.storage path).
+  function flushPendingSave(){
+    if(hasClaudeStorage && saveTimer){
+      clearTimeout(saveTimer);
+      try{ window.storage.set(STORAGE_KEY, buildPayload(), false); }catch(e){}
+    }
+  }
+  document.addEventListener("visibilitychange", function(){
+    if(document.visibilityState === "hidden") flushPendingSave();
+  });
+  window.addEventListener("pagehide", flushPendingSave);
 
   /* ===================== INIT ===================== */
   loadData();
